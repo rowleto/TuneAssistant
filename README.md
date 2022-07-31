@@ -1,4 +1,5 @@
 # TuneAssistant
+### Quick way to add tags to your local music files
 TuneAssistant is a command-line tool used to quickly add tags to your local music files.
 It supports mp3, wav, flac, mka, mkv, ogg, wma, aif, aifc and aiff files by default.
 
