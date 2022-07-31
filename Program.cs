@@ -33,7 +33,7 @@ namespace TuneAssistant
             }
 
             //Accepted file extensions
-            Regex regex = new Regex(@"[.]mp3|[.]wav|[.]flac|[.]mp4|[.]mka|[.]mkv|[.]ogg|[.]wma|[.]aif|[.]aifc|[.]aiff$");
+            Regex regex = new Regex(@"[.]mp3|[.]wav|[.]flac|[.]mka|[.]mkv|[.]ogg|[.]wma|[.]aif|[.]aifc|[.]aiff$");
             
             var files = Directory.EnumerateFiles(argumentHandler.GetArgument(0), "*").Where(file => regex.IsMatch(file)).ToArray();
             Console.WriteLine($"Found {files.Length} files in {argumentHandler.GetArgument(0)}");
